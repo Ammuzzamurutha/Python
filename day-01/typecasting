@@ -1,0 +1,14 @@
+#typecasting
+num_str="100"
+num_int=int(num_str)
+print(num_int)
+num=109
+string_num=str(num)
+print(string_num)
+print(type(num_str))
+string_num+="1"
+print(string_num)
+name_1="aa"
+name_1=bool(name_1)
+print(name_1)
+
