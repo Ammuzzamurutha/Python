@@ -1,0 +1,8 @@
+#input
+user_name=input("Enter your name: ")
+print(f"Hello, {user_name}!")
+user_age=input("Enter your age: ")
+print(f"You are {user_age} years old.")
+user_age=int(user_age)
+user_age+=1
+print(f"Next year, you will be {user_age} years old.")
