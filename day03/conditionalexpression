@@ -1,0 +1,12 @@
+num=18
+result="Can vote" if num >= 18 else "Cannot vote"
+print(result)
+
+num1=-2
+print("Positive" if num1 > 0 else "Negative" if num1 < 0 else "Zero")
+
+num2=88
+print("Even" if num2 % 2 == 0 else "Odd")\
+
+user_name="admin"
+print("Welcome, admin!" if user_name == "admin" else "Welcome, guest!")
