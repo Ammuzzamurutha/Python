@@ -1,0 +1,8 @@
+#weight conversion program
+weight_kg=float(input("Enter the weight in kilograms: "))
+weight_lb=weight_kg*2.20462
+print(f"The weight in pounds is {weight_lb:.2f} lb.")
+weight_lb=float(input("Enter the weight in pounds: "))
+weight_kg=weight_lb/2.20462
+print(f"The weight in kilograms is {weight_kg:.2f} kg.")
+
