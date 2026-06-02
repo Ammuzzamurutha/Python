@@ -1,0 +1,12 @@
+#area of a rectangle 
+h=int(input("Enter the height of the rectangle: "))
+w=int(input("Enter the width of the rectangle: "))
+area=h*w
+print(f"The area of the rectangle is {area}.")
+
+#shopping cart program 
+item=input("Enter the name of the item: ")
+price=float(input("Enter the price of the item: "))
+quantity=int(input("Enter the quantity of the item: "))
+total_cost=price*quantity
+print(f"The total cost for {quantity} {item}(s) is Rupees {total_cost:.2f}.") 
