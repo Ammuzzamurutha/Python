@@ -1,0 +1,25 @@
+#tuple
+cars=("BMW","Audi","Audi","Mercedes","BMW")
+print(cars)
+print(cars[0])
+print(len(cars))
+print(cars.count("BMW"))
+print(cars.index("Audi"))
+print("BMW" in cars)
+#for loop in tuple
+for car in cars:
+    print(car)
+day=("monday",9,"raju")
+print(day)
+tup=(1)
+print(type(tup))
+tup1=(1,)
+print(type(tup1))
+cars[0:2]
+print(cars[0:2])
+#for loop in tuple
+for i in range(len(cars)):
+    print(cars[i])
+#methods in tuple
+print(cars.count("BMW"))
+print(cars.index("Audi"))
