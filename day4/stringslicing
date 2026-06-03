@@ -1,0 +1,14 @@
+str="python"
+print( str[0:2])
+print(len(str))
+str1="Hello, World!"
+print(str+str1)
+print(str[0:])
+print(str[:4])
+print(str[::2])
+
+number="1234-5678-9101-9989"
+last=number[-4:]
+reverse_number=number[::-1]
+print(reverse_number)
+print(f"xxxx xxxx xxxx {last}")
