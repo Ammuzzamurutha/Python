@@ -1,0 +1,20 @@
+#shopping cart program using list 
+
+items=[]
+prices=[]
+sum=0
+while True:
+    item=input("Enter the name of the item (or 'done' to finish): ")
+    if item.lower()=='done':
+        break
+    price=float(input("Enter the price of the item: "))
+    items.append(item)
+    prices.append(price)
+print("you have added the following items to your shopping cart")
+    
+for item in items:
+    print(item, end=", ")
+for price in prices:
+    sum+=price
+
+print(f"The total cost of the items in the shopping cart is Rupees {sum}.")
