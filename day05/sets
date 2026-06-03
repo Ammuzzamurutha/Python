@@ -1,0 +1,23 @@
+#set
+apple={"red","green","yellow"}
+print(apple)
+print("red" in apple)
+apple.add("blue")
+print(apple)
+apple.remove("yellow")
+print(apple)
+apple.clear()
+print(apple)
+cars={"BMW","Audi","Mercedes","BMW"}
+print(cars)
+cars.pop()
+print(cars)
+cars.add("Tesla")
+print(cars)
+cars.remove("Audi")
+print(cars)
+nums={1,2,3,4,5}
+nums.add(6)
+print(nums)
+nums.pop()
+print(nums)
