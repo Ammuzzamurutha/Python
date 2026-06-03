@@ -1,0 +1,36 @@
+list=[101,102,103,104,105]
+print(list)
+print(list[0])
+print(len(list))
+print(list[2:4])
+#list methods
+list.append(106)
+print(list)
+list.insert(0,100)
+print(list)
+list.sort()
+print(list)
+list.reverse()
+print(list)
+list.remove(103)
+print(list)
+list.pop()
+print(list)
+#loop in list
+list1=[1,2,3,4,5]
+for i in list1:
+    print(i)
+list2=[10,20,30,40,50]
+x=50
+indx=0
+for i in list2:
+    if i==x:
+        print(f"{x} Element found at index {indx}")
+        break
+    indx+=1
+fruits=["apple","banana","cherry","date"]
+print("cherry" in fruits)
+print("grape" in fruits)
+fruits[1]="blueberry"
+print(fruits)
+print(fruits.index("date"))
