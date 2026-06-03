@@ -1,0 +1,25 @@
+#dictionary
+info={"name":"Raju","age":30,"city":"New York"}
+print(info)
+print(info["name"])
+print(info["age"])
+info["age"]=31
+print(info)
+#Adding a new key-value pair
+info["country"]="USA"
+print(info)
+#Removing a key-value pair
+del info["city"]
+print(info)
+#Iterating through a dictionary
+for i in info:
+    print(f"{i}: {info[i]}")
+#methods in dictionary
+print(info.keys())
+print(info.values())
+print(info.items())
+print(info.get("name"))
+print(info.get("town"))
+print("code ended")
+info.update({"age":32,"city":"Los Angeles"})
+print(info)
