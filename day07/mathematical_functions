@@ -1,0 +1,32 @@
+#mathematical functions
+
+#aggregations
+arr12=np.array([1,-2.8,2.8,3,3,4,5])
+print(np.sum(arr12))
+print(np.prod(arr12))
+print(np.min(arr12))
+print(np.max(arr12))
+print(np.mean(arr12))
+print(np.std(arr12))
+print(np.argmin(arr12))
+print(np.argmax(arr12))
+print(np.var(arr12))
+
+#power functions
+print(np.sqrt(arr12))
+print(np.square(arr12))
+print(np.power(arr12,3))
+
+#log
+print(np.log(arr12))
+print(np.exp(arr12))
+
+#round
+print(np.round(arr12))
+print(np.ceil(arr12))
+print(np.floor(arr12))
+print(np.trunc(arr12))
+
+print(np.unique(arr12))
+print(np.sort(arr12))
+print(np.abs(arr12))
