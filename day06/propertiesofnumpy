@@ -1,0 +1,36 @@
+#array properties
+arr=np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(arr.shape)
+print(arr.dtype)
+print(arr.size)
+print(arr.ndim)
+
+float_arr=arr.astype(np.float64)
+print(float_arr,float_arr.dtype)
+
+#array operations
+arr2=np.array([[1,2,3],[4,5,6]])
+print(arr2,arr2.shape)
+reshaped=arr2.reshape((3,2)) #changing [mxn -> nxm]
+print(reshaped,reshaped.shape)
+flattened=arr2.flatten() # 2d -> 1d array
+print(flattened,flattened.shape)
+
+#indexing in arrays
+
+arr3=np.array([1,2,3,4,5])
+print(arr3[0])
+arr4=np.array([[1,2],[3,4]])
+print(arr4[0][1])
+#fancing indexing 
+arr5=np.array([1,2,3,4,5])
+idx=[2,3,0]
+print(arr5[idx])
+#boolean indexing
+print(arr5[arr5>3])
+print(arr5[arr5%2==0])
+#slicing in arrays 
+print(arr5[1:])
+print(arr5[:])
+print(arr5[:4])
+print(arr5[::2])
