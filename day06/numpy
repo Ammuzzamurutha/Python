@@ -1,0 +1,70 @@
+import numpy as np
+np_array = np.array([1, 2, 3, 4, 5])
+print("Numpy Array:", np_array)
+print(type (np_array))
+#operation speed list vs numpy array
+import time
+# Create a large list and a large numpy array
+large_list = list(range(1000000))
+large_array = np.array(large_list)
+# Measure time taken to sum the list
+start_time = time.time()
+list_sum = sum(large_list)
+end_time = time.time()
+print(f"Time taken to sum the list: {end_time - start_time:.6f} seconds")
+# Measure time taken to sum the numpy array
+start_time = time.time()
+array_sum = np.sum(large_array)
+end_time = time.time()
+print(f"Time taken to sum the numpy array: {end_time - start_time:.6f} seconds")
+
+#measure the memory usage of list vs numpy array
+import sys
+# Measure memory usage of the list
+list_memory = sys.getsizeof(large_list)
+print(f"Memory usage of the list: {list_memory} bytes")
+# Measure memory usage of the numpy array
+array_memory = large_array.nbytes
+print(f"Memory usage of the numpy array: {array_memory} bytes")
+
+#advantages of numpy array over list
+#1. Performance: Numpy arrays are optimized for performance and can be much faster than lists for large datasets.
+#2. Memory Efficiency: Numpy arrays use less memory than lists because they store data in a contiguous block of memory and have a fixed data type.
+#3. Functionality: Numpy provides a wide range of mathematical functions and operations that can be applied to arrays, making it easier to perform complex calculations.
+#4.np_arrays are homogeneous, meaning all elements must be of the same type, which allows for more efficient storage and faster computations compared to lists that can contain heterogeneous data types.
+
+#create numpy array from python list
+python_list = [1, 2, 3, 4, 5]
+numpy_array = np.array(python_list)
+print("Numpy Array from Python List:", numpy_array)
+print(numpy_array.dtype)
+print(numpy_array.shape)
+print(type(numpy_array))
+python_list1=[1,2,3,4,"prime"]
+numpy_array1=np.array(python_list1)
+print(numpy_array1,numpy_array1.dtype)
+print(numpy_array1.shape)
+print(type(numpy_array1))
+
+#2d numpy array
+arr2d=np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(arr2d)
+print(arr2d.shape)
+print(arr2d.dtype)
+
+#create arrays from built-in functions
+arr_zeros=np.zeros((3,3),dtype="int64")# prefill
+print(arr_zeros)
+arr_ones=np.ones((2,2),dtype="int64")
+print(arr_ones)
+
+arr_val=np.full((3,4),100)# prefill with values
+print(arr_val)
+arr_iden=np.eye(3,dtype="int64") #identity matrix
+print(arr_iden)
+ 
+arr_range=np.arange(0,11,2) # range function in numpy
+print(arr_range)
+
+arr_space=np.linspace(0,11,4) # evenly spaced arrays
+print(arr_space)
