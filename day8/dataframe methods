@@ -1,0 +1,14 @@
+#csv data 
+df=pd.read_csv("raw_data.csv")
+print(df)
+# in similar way we also read json file as-> read_json
+
+#dataframe methods 
+print(df.head()) #starting 5 rows of a table
+print(df.tail()) #last 5 rows of a table
+print(df.sample()) # random values in a table 
+print(df.info()) # overall summary of the data
+print(df.shape)  #we get (row,cols)
+print(df.describe()) # we get mean ,std ,max and many more values
+print(df.columns)
+print(df.nunique()) # we get n number of unique rows
